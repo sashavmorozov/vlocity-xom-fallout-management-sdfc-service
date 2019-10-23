@@ -1,0 +1,20 @@
+Name: Vlocity XOM Fallout Management
+VlocityDataPackKeys:
+    - assignmentRules/Case.assignmentRules
+    - email/unfiled$public/Fulfillment_Fulfillment_Case_is_Created_HTML.email
+    - flows/Create_Case_for_Failed_Orchestration_Item.flow
+    - objects/Case/fields/Case_URL__c.field-meta.xml
+    - objects/Case/fields/Orchestration_Item__c.field-meta.xml
+    - objects/Case/fields/Orchestration_Plan__c.field-meta.xml
+    - objects/Case/fields/Order__c.field-meta.xml
+    - classes/AssignCasesUsingAssignmentRules.cls
+VlocityTypesToFetch:
+
+SalesforceTypesToFetch:
+    - ApexClass
+    - AssignmentRules
+    - BusinessProcess
+    - CustomField
+    - EmailTemplate
+    - Flow
+    - Queue

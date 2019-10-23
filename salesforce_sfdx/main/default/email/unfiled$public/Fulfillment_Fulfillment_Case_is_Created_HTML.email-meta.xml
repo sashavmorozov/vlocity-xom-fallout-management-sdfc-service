@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>A template for notification on fulfillment case creation</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>[Fulfillment] Fulfillment Case is Created (HTML)</name>
+    <style>none</style>
+    <subject>[Fulfillment] A new case was created for order {!Case.Order__c}</subject>
+    <textOnly>Fulfillment case is created.
+
+Something went wrong while we were fulfilling the order {!Case.Order__c}. One of the tasks in the process fatally failed and now needs a boost from a human expert.
+
+Case summary
+ - Case Number: {!Case.CaseNumber}
+ - Case Priority: {!Case.Priority}
+ - Account Name: {!Case.Account}
+ - Order: {!Case.Order__c}
+ - Orchestration Plan: {!Case.Orchestration_Plan__c}
+ - Orchestration Item: {!Case.Orchestration_Item__c}
+
+Thanks,
+Your automated case notification robot
+
+----------------------
+Vlocity Inc, Salesforce Tower, 415 Mission Street, 50th Floor, San Francisco, CA 94105</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>
